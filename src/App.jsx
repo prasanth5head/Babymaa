@@ -122,12 +122,19 @@ IMAGE_LIST.sort((a, b) => {
   return a.localeCompare(b);
 });
 
-// Video list for the surprise player — add your video files to public/moments/ and update names here
+// Video list for the surprise player — all available videos from public/moments are included here.
 const VIDEOS = [
   "/moments/WhatsApp Video 2026-06-14 at 3.07.44 PM (1).mp4",
   "/moments/WhatsApp Video 2026-06-14 at 3.07.44 PM.mp4",
   "/moments/WhatsApp Video 2026-06-14 at 3.07.45 PM (1).mp4",
   "/moments/WhatsApp Video 2026-06-14 at 3.07.45 PM.mp4",
+  "/moments/WhatsApp Video 2026-07-02 at 12.31.25 AM (1).mp4",
+  "/moments/WhatsApp Video 2026-07-02 at 12.31.25 AM.mp4",
+  "/moments/WhatsApp Video 2026-07-02 at 12.31.26 AM (1).mp4",
+  "/moments/WhatsApp Video 2026-07-02 at 12.31.26 AM (2).mp4",
+  "/moments/WhatsApp Video 2026-07-02 at 12.31.26 AM.mp4",
+  "/moments/WhatsApp Video 2026-07-02 at 12.31.27 AM (1).mp4",
+  "/moments/WhatsApp Video 2026-07-02 at 12.31.27 AM.mp4",
 ];
 
 const MEMORIES = [
@@ -1407,7 +1414,7 @@ export default function App() {
   // Vault unlock handler
   const handleUnlockVault = () => {
     const pw = vaultPassword.trim().toLowerCase();
-    if (pw === "babymaa" || pw === "jessy" || pw === "baby" || pw === "b" || pw === "j") {
+    if (pw === "babymaa" || pw === "Loveyoubabyma" || pw === "baby" || pw === "b") {
       setVaultUnlocked(true);
       setVaultError("");
     } else {
